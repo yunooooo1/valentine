@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Be My Valentine 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Floating Hearts -->
+  <div class="hearts-container"></div>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- ✅ QUESTION GATE (NEW) -->
+  <section class="container" id="questionGate">
+    <h1 class="title">Before you continue… 💖</h1>
+    <p style="margin-bottom:20px;">What is my favorite skin in Phantom?</p>
+
+    <input id="answerInput" type="text" placeholder="Type your answer...">
+
+    <button id="checkAnswer" class="gate-btn">
+      Submit 💌
+    </button>
+
+    <p id="errorMsg"></p>
+  </section>
+
+  <!-- Landing Page -->
+  <section class="container" id="landing" style="display:none;">
+    <h1 class="title">Can I be your Valentine? 💖</h1>
+    <button id="yesBtn" class="yes">Yes 💕</button>
+    <button id="noBtn" class="no">No 😢</button>
+  </section>
+
+  <!-- Popup -->
+  <div class="overlay" id="overlay"></div>
+  <div class="popup" id="popup">
+    <h2>You said YES! 🥰</h2>
+    <p>You just made me the happiest person alive. I promise to make this Valentine unforgettable 💘</p>
+    <button id="openLetter">Open Love Letter 💌</button>
+  </div>
+
+  <!-- Love Letter -->
+  <section class="letter-section" id="letterSection">
+    <div class="letter-card">
+      <h2>💌 My Love Letter 💌</h2>
+      <p>
+        My Love ❤️,
+
+        From the moment you came into my life, everything changed in the most beautiful way.
+        Your smile brightens my darkest days, and your laugh is my favorite melody.
+
+        I don’t just want to be your Valentine today —
+        I want to choose you every single day.
+
+        It doesn’t matter if we fight or argue sometimes,
+        because disagreements will never change how much I love you.
+        What truly matters is that we always find our way back to each other,
+        stronger, wiser, and more in love than before.
+        Every challenge we face only makes our bond deeper.
+
+        You are my favorite notification,
+        my safest place,
+        and the reason behind my random smiles.
+
+        I promise to cherish you,
+        to support you,
+        and to love you with all my heart.
+
+        Forever yours,<br>
+        ❤️
+      </p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
